@@ -45,3 +45,7 @@ data_panen = {
 print("Seluruh Data Panen:")
 for lokasi, info in data_panen.items():
     print(f"{lokasi}: {info}")
+
+# 2. Tampilkan jumlah hasil panen jagung dari lokasi2
+jagung_lokasi2 = data_panen['lokasi2']['hasil_panen']['jagung']
+print(f"\nJumlah hasil panen jagung dari lokasi2: {jagung_lokasi2}")
