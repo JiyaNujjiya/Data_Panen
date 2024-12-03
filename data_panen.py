@@ -65,3 +65,9 @@ print("\nJumlah hasil panen padi setiap lokasi:")
 print(padi_panen)
 print("\nJumlah hasil panen kedelai setiap lokasi:")
 print(kedelai_panen)
+
+# 5. Buat variabel terpisah untuk menyimpan jumlah hasil panen padi dan kedelai dari setiap lokasi
+jumlah_padi = sum(padi_panen.values())
+jumlah_kedelai = sum(kedelai_panen.values())
+print(f"\nTotal hasil panen padi: {jumlah_padi}")
+print(f"Total hasil panen kedelai: {jumlah_kedelai}")
