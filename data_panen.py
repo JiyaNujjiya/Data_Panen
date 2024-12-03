@@ -71,3 +71,13 @@ jumlah_padi = sum(padi_panen.values())
 jumlah_kedelai = sum(kedelai_panen.values())
 print(f"\nTotal hasil panen padi: {jumlah_padi}")
 print(f"Total hasil panen kedelai: {jumlah_kedelai}")
+
+# 6. Buat percabangan untuk menentukan lokasi yang memerlukan perhatian khusus
+print("\nStatus lokasi berdasarkan hasil panen:")
+for lokasi, info in data_panen.items():
+    padi = info['hasil_panen']['padi']
+    jagung = info['hasil_panen']['jagung']
+    if padi > 1300 or jagung > 800:
+        print(f"{info['nama_lokasi']} memerlukan perhatian khusus.")
+    else:
+        print(f"{info['nama_lokasi']} dalam kondisi baik.")
